@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Descuentos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="text-center">Calculadora de Descuentos</h2>
+        <form id="discountForm">
+            <div class="mb-3">
+                <label for="producto1" class="form-label">Producto 1</label>
+                <input type="number" id="producto1" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="producto2" class="form-label">Producto 2</label>
+                <input type="number" id="producto2" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="producto3" class="form-label">Producto 3</label>
+                <input type="number" id="producto3" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="producto4" class="form-label">Producto 4</label>
+                <input type="number" id="producto4" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="producto5" class="form-label">Producto 5</label>
+                <input type="number" id="producto5" class="form-control" required>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Subtotal</label>
+                <input type="text" id="subtotal" class="form-control" readonly>
+            </div>
+            <div class="mb-3">
+                <label id="label-descuento" class="form-label">Descuento 0%</label>
+                <input type="text" id="descuento" class="form-control" readonly>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Total a Pagar</label>
+                <input type="text" id="totalPagar" class="form-control" readonly>
+            </div>
+
+            <button type="button" class="btn btn-primary" id="calcularBtn">Calcular</button>
+            <button type="reset" class="btn btn-danger" id="limpiarBtn">Limpiar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
